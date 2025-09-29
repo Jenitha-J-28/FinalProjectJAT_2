@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AllContactListTests" parallel="tests" thread-count="8" verbose="1">
+
+    <!-- Run tests in Chrome -->
+    <test name="FunctionalTests-Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="BaseTest.BrowseNavigateTest"/>
+            <class name="BaseTest.CartTest"/>
+            <class name="BaseTest.LoginTest"/>
+            <class name="BaseTest.LogOutTest"/>
+            <class name="BaseTest.OrdersTest"/>
+            <class name="BaseTest.ResponsiveTest"/>
+            <class name="BaseTest.SignUpTest"/>
+            <class name="BaseTest.UIUXTest"/>
+        </classes>
+    </test>
+
+    <!-- Run tests in Firefox -->
+    <test name="FunctionalTests-Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="BaseTest.BrowseNavigateTest"/>
+            <class name="BaseTest.CartTest"/>
+            <class name="BaseTest.LoginTest"/>
+            <class name="BaseTest.LogOutTest"/>
+            <class name="BaseTest.OrdersTest"/>
+            <class name="BaseTest.ResponsiveTest"/>
+            <class name="BaseTest.SignUpTest"/>
+            <class name="BaseTest.UIUXTest"/>
+        </classes>
+    </test>
+
+    <!-- Run tests in Edge -->
+    <test name="FunctionalTests-Edge">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="BaseTest.BrowseNavigateTest"/>
+            <class name="BaseTest.CartTest"/>
+            <class name="BaseTest.LoginTest"/>
+            <class name="BaseTest.LogOutTest"/>
+            <class name="BaseTest.OrdersTest"/>
+            <class name="BaseTest.ResponsiveTest"/>
+            <class name="BaseTest.SignUpTest"/>
+            <class name="BaseTest.UIUXTest"/>
+        </classes>
+    </test>
+
+
+</suite>
